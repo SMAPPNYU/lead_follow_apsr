@@ -1,0 +1,225 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="js/dygraph-combined.js"></script>
+<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+#sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
+#header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
+#div1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 90px; }
+#div2 { position: absolute; left: 50%; margin-left: 150; top: 0%; margin-top: 90px; }
+#div3 { position: absolute; left: 50%; margin-left: -500; top: 0%; margin-top: 440px; }
+#div4 { position: absolute; left: 50%; margin-left: -500; top: 0%; margin-top: 480px; }
+#header2 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 550px; }
+#div5 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 600px; }
+#div6 { position: absolute; left: 50%; margin-left: 0; top: 0%; margin-top: 600px; }
+#header3 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 1250px; }
+#div7 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 1300px; }
+#div8 { position: absolute; left: 50%; margin-left: 0; top: 0%; margin-top: 1300px; }
+  body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  }
+</style>
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<body>
+
+<div id="sitemap">
+<b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
+<select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
+<option value=topic-1.html>Topic 1: Anniversary of the Civil Rights Act</option>
+<option value=topic-2.html>Topic 2: Severe Weather in Oklahoma</option>
+<option value=topic-3.html>Topic 3: Investigation of Attack on American Embassy in Benghazi</option>
+<option value=topic-4.html>Topic 4: Public Communication by House Republicans</option>
+<option value=topic-5.html>Topic 5: Memorial Day</option>
+<option value=topic-6.html>Topic 6: Prayers & Thoughts After Disasters</option>
+<option value=topic-7.html>Topic 7: 100 Days of #BringBackOurGirls campaign</option>
+<option value=topic-8.html>Topic 8: Public Communication by Senate Republicans</option>
+<option value=topic-9.html>Topic 9: Gender Wage Gap</option>
+<option value=topic-10.html>Topic 10: Thanksgiving</option>
+<option value=topic-11.html>Topic 11: Hobby Lobby Supreme Court Decision (Democrats)</option>
+<option value=topic-12.html>Topic 12: Republican Issues, Spring 2013</option>
+<option value=topic-13.html>Topic 13: Small Business</option>
+<option value=topic-14.html>Topic 14: Marriage Equality</option>
+<option value=topic-15.html>Topic 15: Gun Violence</option>
+<option value=topic-16.html>Topic 16: Abortion (Pro-Life)</option>
+<option value=topic-17.html>Topic 17: 2013 Government Shutdown (Republicans)</option>
+<option value=topic-18.html>Topic 18: Veteran Affairs Delays Scandal</option>
+<option value=topic-19.html>Topic 19: General Vocabulary (All)</option>
+<option value=topic-20.html>Topic 20: NSA Surveillance Scandal</option>
+<option value=topic-21.html>Topic 21: General Vocabulary (Senate)</option>
+<option value=topic-22.html>Topic 22: Follow Friday Tweets (#FF)</option>
+<option value=topic-23.html>Topic 23: #BringBackOurGirls campaign</option>
+<option value=topic-24.html>Topic 24: Deaths of Mandela, Thatcher, Lautenberg</option>
+<option value=topic-25.html>Topic 25: Gold Medal Awards</option>
+<option value=topic-26.html>Topic 26: 2013 Government Shutdown (Democrats)</option>
+<option value=topic-27.html>Topic 27: Student Debt (2014)</option>
+<option value=topic-28.html>Topic 28: Employment Non-Discrimination Act</option>
+<option value=topic-29.html>Topic 29: General Vocabulary (House)</option>
+<option value=topic-30.html>Topic 30: Valentine's Day</option>
+<option value=topic-31.html>Topic 31: Public Communication by House Democrats</option>
+<option value=topic-32.html>Topic 32: Islamic State</option>
+<option value=topic-33.html>Topic 33: Use of Military Force in Syria</option>
+<option value=topic-34.html>Topic 34: Weekly GOP Address</option>
+<option value=topic-35.html>Topic 35: 2013 Budget Sequestration (Republicans)</option>
+<option value=topic-36.html>Topic 36: Ebola</option>
+<option value=topic-37.html>Topic 37: Social Security</option>
+<option value=topic-38.html>Topic 38: Budget Discussion (early 2014)</option>
+<option value=topic-39.html>Topic 39: Keystone XL Pipeline</option>
+<option value=topic-40.html>Topic 40: Congressional Arts Competition</option>
+<option value=topic-41.html>Topic 41: Immigration (Border Security)</option>
+<option value=topic-42.html>Topic 42: 2013 Budget Sequestration (Democrats)</option>
+<option value=topic-43.html>Topic 43: Executive Action on Immigration</option>
+<option value=topic-44.html>Topic 44: Public Communication by Senate Democrats</option>
+<option value=topic-45.html>Topic 45: Photos Posted on Facebook</option>
+<option selected="selected" value=topic-46.html>Topic 46: Unemployment Numbers Reports</option>
+<option value=topic-47.html>Topic 47: Paul Ryan's Budget Proposal</option>
+<option value=topic-48.html>Topic 48: Black History Month</option>
+<option value=topic-49.html>Topic 49: 2013 Budget Agreement</option>
+<option value=topic-50.html>Topic 50: Climate Change</option>
+<option value=topic-51.html>Topic 51: Lame Duck Congress</option>
+<option value=topic-52.html>Topic 52: Winter Weather</option>
+<option value=topic-53.html>Topic 53: Minimum Wage</option>
+<option value=topic-54.html>Topic 54: Republican Issues, 2014</option>
+<option value=topic-55.html>Topic 55: Soccer World Cup</option>
+<option value=topic-56.html>Topic 56: Student Debt (2013)</option>
+<option value=topic-57.html>Topic 57: Election Day 2014</option>
+<option value=topic-58.html>Topic 58: Affordable Care Act</option>
+<option value=topic-59.html>Topic 59: Budget Discussion (mid-2014)</option>
+<option value=topic-60.html>Topic 60: Family Holidays</option>
+<option value=topic-61.html>Topic 61: Appreciation Days (Mother, Teacher...)</option>
+<option value=topic-62.html>Topic 62: Border Crisis in Texas</option>
+<option value=topic-63.html>Topic 63: Obamacare (Employer Mandate)</option>
+<option value=topic-64.html>Topic 64: FAA Furloughs Cause Flight Delays</option>
+<option value=topic-65.html>Topic 65: Constituency Visits</option>
+<option value=topic-66.html>Topic 66: Malaysian Airlines Crash in Ukraine</option>
+<option value=topic-67.html>Topic 67: Comprehensive Immigration Reform</option>
+<option value=topic-68.html>Topic 68: Martin Luther King</option>
+<option value=topic-69.html>Topic 69: Sargent Tahmooressi Release</option>
+<option value=topic-70.html>Topic 70: #MiddleClassFirst campaign</option>
+<option value=topic-71.html>Topic 71: 2014 Winter Olympics</option>
+<option value=topic-72.html>Topic 72: Christmas Holidays</option>
+<option value=topic-73.html>Topic 73: Birthday Celebrations</option>
+<option value=topic-74.html>Topic 74: Hobby Lobby Supreme Court Decision (Republicans)</option>
+<option value=topic-75.html>Topic 75: Military Justice Improvement Act</option>
+<option value=topic-76.html>Topic 76: Cory Booker</option>
+<option value=topic-77.html>Topic 77: Flag Day</option>
+<option value=topic-78.html>Topic 78: Constitution Day</option>
+<option value=topic-79.html>Topic 79: Earth Day</option>
+<option value=topic-80.html>Topic 80: Fort Hood Shooting</option>
+<option value=topic-81.html>Topic 81: Poverty (SNAP program)</option>
+<option value=topic-82.html>Topic 82: Labor Day</option>
+<option value=topic-83.html>Topic 83: 21st Century Cures Initiative</option>
+<option value=topic-84.html>Topic 84: Media Appearances by House Republicans</option>
+<option value=topic-85.html>Topic 85: Unemployment Insurance</option>
+<option value=topic-86.html>Topic 86: Legislative Activity by House Democrats</option>
+<option value=topic-87.html>Topic 87: Entrepeneurs Day and World Aids Day</option>
+<option value=topic-88.html>Topic 88: IRS Scandal</option>
+<option value=topic-89.html>Topic 89: Obamacare (Website and Implementation)</option>
+<option value=topic-90.html>Topic 90: State of the Union Address</option>
+<option value=topic-91.html>Topic 91: Father's Day and St. Patrick's Day</option>
+<option value=topic-92.html>Topic 92: Democratic Issues, Early 2013</option>
+<option value=topic-93.html>Topic 93: Jobs Bills Omnibus</option>
+<option value=topic-94.html>Topic 94: Boston Marathon Attack and Tax Day</option>
+<option value=topic-95.html>Topic 95: 113th Congress Inauguration</option>
+<option value=topic-96.html>Topic 96: Violence Against Women Act</option>
+<option value=topic-97.html>Topic 97: Protests in Ukraine and Venezuela</option>
+<option value=topic-98.html>Topic 98: Veterans Day</option>
+<option value=topic-99.html>Topic 99: CIA Detentions and Interrogations Report</option>
+<option value=topic-100.html>Topic 100: #ObamacareInThreeWords Campaign</option>
+</select>
+</div>
+<div id="header1"><h3>Topic Usage Over Time:</h3></div>
+<div id="div1" style="width:600px">
+</div>
+
+<div id="div2" style="width:300px">
+<img src='img/words-plot-46.png'>
+</div>
+
+<div id="div3">
+<form class="form-inline">
+<b>Display:  </b>
+<label class="checkbox-inline">
+	<input type="checkbox" id=0 onClick="change(this)" checked> Democrats
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id=1 onClick="change(this)" checked> Republicans
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id=2 onClick="change(this)" unchecked> Media
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id=3 onClick="change(this)" unchecked> Public
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id=4 onClick="change(this)" unchecked> Dem. Supporters
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id=5 onClick="change(this)" unchecked> Rep. Supporters
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id=6 onClick="change(this)" unchecked> Random Sample
+</label>
+       &#8226; <b> Smoothing period:</b>
+    <input type="number" value="7" id="input" min="1" step="1" style = "width:50px;height:30px" onchange="changeRoll()">
+    days 
+</form>
+</div>
+
+
+<div id="div4">
+Topic usage by elites: 0.37% all, <font color="blue">0.30% Senate Democrats</font>, <font color="red">0.41% Senate Republicans</font>, <font color="blue">0.50% House Democrats</font>, <font color="red">0.26% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepPhilGingrey">@RepPhilGingrey (R-GA)</a>, <a href="http://www.twitter.com/SenThadCochran">@SenThadCochran (R-MS)</a>, <a href="http://www.twitter.com/RepCuellar">@RepCuellar (D-TX)</a>, <a href="http://www.twitter.com/RepGeneGreen">@RepGeneGreen (D-TX)</a>, <a href="http://www.twitter.com/RepPerlmutter">@RepPerlmutter (D-CO)</a></br>Topic usage by media and public: 0.42% Media, 0.31% informed public, 0.16% random users, <font color="blue">0.34% Democratic supporters</font>, <font color="red">0.29% Republican supporters</font>.</br>
+</div>
+
+<div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
+<div id="div5" style="width:500px">
+<blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Another month, another positive jobs report. Our economy added 236,000 jobs in Feb &amp; unemployment rate fell to 7.7%, lowest in 4+ years.</p> RepThompson (@RepThompson) <a href='https://twitter.com/RepThompson/status/310079814373609473'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Unemployment dropped to 7.5% and we added 165K jobs in April - the 38th straight month of private job growth. Let's continue to improve.</p> RepMarkTakano (@RepMarkTakano) <a href='https://twitter.com/RepMarkTakano/status/330355704168869889'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>W/ 50 months of job growth, #jobsreport shows strong progress. Now we must #raisethewage &amp; #renewui to build an economy that works for all.</p> RepTierney (@RepTierney) <a href='https://twitter.com/RepTierney/status/462220819671052288'></a></blockquote>
+</div>
+<div id="div6" style="width:500px">
+<blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Official unemployment rate drops to 7.4% while creating more jobs in the private sector. 44 months of positive job growth</p> GerryConnolly (@GerryConnolly) <a href='https://twitter.com/GerryConnolly/status/363281147192541184'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>February #jobs report shows economy added 236k jobs and unemployment fell to 7.7%, lowest rate in 4 years.  http://t.co/EWEqqmE74y</p> Rep_Adam_Smith (@Rep_Adam_Smith) <a href='https://twitter.com/Rep_Adam_Smith/status/310075696745676801'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>The unemployment rate dropped as our economy added 162,000 jobs in July – the 41st consecutive month of private sector job growth!</p> RepMarkTakano (@RepMarkTakano) <a href='https://twitter.com/RepMarkTakano/status/363346437540970497'></a></blockquote>
+</div>
+<div id="header3"><h3>Sample of representative media tweets:</h3></div>
+<div id="div7" style="width:500px">
+<blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>BREAKING: Economy adds 162,000 jobs in July; unemployment rate drops to 7.4 percent</p> HuffPostPol (@HuffPostPol) <a href='https://twitter.com/HuffPostPol/status/363275728118235136'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Breaking News: U.S. Economy Adds 175,000 Jobs, and Unemployment Rate Ticks Up to 6.7% http://t.co/14jFEhwJcE</p> nytimes (@nytimes) <a href='https://twitter.com/nytimes/status/441929847481577473'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>BREAKING: Employers added 165,000 jobs in April as unemployment rate falls to four-year low of 7.5 percent, Labor Department reports</p> CBSNews (@CBSNews) <a href='https://twitter.com/CBSNews/status/330298772611551233'></a></blockquote>
+</div>
+<div id="div8" style="width:500px">
+<blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>The unemployment rate dropped to 6.1% in June, the lowest since September 2008. #edshow #ObamaEconomy http://t.co/sYLTU6UtRQ</p> edshow (@edshow) <a href='https://twitter.com/edshow/status/484807844915462145'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>U.S. added 214,000 jobs in October. Unemployment rate fell to 5.8% - lowest level since 2008. http://t.co/IHGGjNVBa8 http://t.co/jkRyNdDsIV</p> WSJ (@WSJ) <a href='https://twitter.com/WSJ/status/530724622204162048'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>50 straight months of private sector job growth = 9.2 million jobs since March 2010. #RenewUI #RaiseTheWage #edshow http://t.co/5zmsvD3xJ4</p> edshow (@edshow) <a href='https://twitter.com/edshow/status/462336511233388544'></a></blockquote>
+</div>
+<br><br>
+</div>
+
+<script type="text/javascript">
+  var g;
+  g = new Dygraph(
+    document.getElementById("div1"),
+"data/ts-46.csv", // path to CSV file
+    {
+      showRangeSelector: false,
+      rollPeriod: 7,
+      title: "",
+      ylabel: "Pr(topic)",
+      legend: "always",
+      labelsDivStyles: { "textAlign": "right" , "background": "none"},
+      colors: ["blue", "red", "black", "green", "darkblue", "darkred", "darkgray"],
+      visibility: [true, true, false, false, false, false, false],
+      labelsSeparateLines: true,
+      labelsKMB: true,
+    }          // options
+  );
+
+  function change(el) {
+     g.setVisibility(el.id, el.checked);
+  }
+  function changeRoll(){
+    value = input.value;
+    g.adjustRoll(value);
+  }
+
+</script>
+</body>
+</html>
+
